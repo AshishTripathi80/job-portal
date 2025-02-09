@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Environment Variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+
+
+# Optional: Coverage directory (if you use a testing framework)
+coverage/
+
+# Optional: Build output (if you have a build process)
+dist/
+build/
+
+# Optional: Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
