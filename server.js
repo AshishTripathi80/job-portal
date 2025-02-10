@@ -6,6 +6,7 @@ import morgan from 'morgan';
 import connectDB from './config/db.js';
 import authRoutes from './routes/authRoutes.js';
 import errorMiddelware from './middelwares/errorMiddelware.js';
+import "express-async-errors";
 
 // config ENV
 dotenv.config()
@@ -26,10 +27,6 @@ app.use('/api/auth',authRoutes);
 
 //validation middelwares
 app.use(errorMiddelware)
-
-app.get("/",(req,res)=>{
-    res.send("<h1>Welcome to Job Portal</h1>");
-});
 
 const PORT=process.env.PORT || 8080
 
